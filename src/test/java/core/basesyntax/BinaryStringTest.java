@@ -12,7 +12,7 @@ public class BinaryStringTest {
             String expectedResult = Integer.toBinaryString(value);
 
             Assert.assertEquals("Test failed with value: " + value,
-                    actualResult, expectedResult);
+                    expectedResult, actualResult);
         }
     }
 }
