@@ -7,6 +7,7 @@ public class BinaryString {
      * а возвращает String с представлением этого числа в двоичном виде.
      */
     public String toBinaryString(int value) {
-        return null;
+        String binStr = Integer.toBinaryString(value);
+        return binStr;
     }
 }
