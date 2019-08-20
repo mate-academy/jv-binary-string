@@ -11,8 +11,7 @@ public class BinaryString {
         do {
             sb.append(value % 2);
             value = value / 2;
-        }
-        while (value > 0);
+        } while (value > 0);
         return sb.reverse().toString();
     }
 }
