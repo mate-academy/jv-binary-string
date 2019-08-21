@@ -9,11 +9,11 @@ public class BinaryString {
         if (value == 0) {
             return "0";
         }
-        StringBuilder res = new StringBuilder();
+        StringBuilder result = new StringBuilder();
         while (value >= 1) {
-            res.append(value % 2);
+            result.append(value % 2);
             value /= 2;
         }
-        return new String(res.reverse());
+        return new String(result.reverse());
     }
 }
