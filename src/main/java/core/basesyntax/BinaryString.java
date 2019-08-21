@@ -19,7 +19,6 @@ public class BinaryString {
             }
             value /= 2;
         }
-        StringBuilder builder = new StringBuilder(binaryNumber).reverse();
-        return builder.toString();
+        return new StringBuilder(binaryNumber).reverse().toString();
     }
 }
