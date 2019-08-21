@@ -10,16 +10,16 @@ public class BinaryString {
         if (value == 0) {
             return "0";
         }
-            String binaryNumber = "";
-            while (value >= 1) {
-                if (value % 2 != 0) {
-                    binaryNumber += "1";
-                } else {
-                    binaryNumber += "0";
-                }
-                value /= 2;
+        String binaryNumber = "";
+        while (value >= 1) {
+            if (value % 2 != 0) {
+                binaryNumber += "1";
+            } else {
+                binaryNumber += "0";
             }
-            StringBuilder builder = new StringBuilder(binaryNumber).reverse();
-            return builder.toString();
+            value /= 2;
+        }
+        StringBuilder builder = new StringBuilder(binaryNumber).reverse();
+        return builder.toString();
     }
 }
