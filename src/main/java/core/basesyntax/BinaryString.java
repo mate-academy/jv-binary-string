@@ -8,7 +8,6 @@ public class BinaryString {
      */
     public String toBinaryString(int value) {
         StringBuilder str =  new StringBuilder("");
-        StringBuilder res = new StringBuilder("");
         if (value == 0) {
             str.append(0);
             return str.toString();
@@ -22,10 +21,7 @@ public class BinaryString {
             value /= 2;
         }
 
-        for (int i = str.length() - 1; i >= 0; i--) {
-            res.append(str.toString().charAt(i));
-        }
 
-        return res.toString();
+        return str.reverse().toString();
     }
 }
