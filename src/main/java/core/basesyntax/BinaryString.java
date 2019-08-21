@@ -10,8 +10,7 @@ public class BinaryString {
         if (value != 0) {
             String binStr = "";
             while (value > 0) {
-                int modulo = value % 2;
-                binStr = modulo + binStr;
+                binStr = value % 2 + binStr;
                 value = value / 2;
             }
             return binStr;
