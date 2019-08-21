@@ -9,7 +9,7 @@ public class BinaryString {
     public String toBinaryString(int value) {
         if (value == 0) {
             return "0";
-        } else {
+        }
             String binaryNumber = "";
             while (value >= 1) {
                 if (value % 2 != 0) {
@@ -21,6 +21,5 @@ public class BinaryString {
             }
             StringBuilder builder = new StringBuilder(binaryNumber).reverse();
             return builder.toString();
-        }
     }
 }
