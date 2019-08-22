@@ -16,9 +16,6 @@ public class BinaryString {
             value /= 2;
         }
         return new StringBuilder(res).reverse().toString();
-
     }
-
-
 }
 
