@@ -13,9 +13,8 @@ public class BinaryString {
                 bin = (value % 2 == 0 ? "0" : "1") + bin;
                 value /= 2;
             }
-        } else {
-            bin = "0";
+            return bin;
         }
-        return bin;
+        return "0";
     }
 }
