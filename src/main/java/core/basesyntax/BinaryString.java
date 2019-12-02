@@ -10,7 +10,7 @@ public class BinaryString {
         String bin = "";
         if (value != 0) {
             while (value > 0) {
-                bin = (value % 2 == 0 ? "0" : "1") + bin;
+                bin = (value % 2) + bin;
                 value /= 2;
             }
             return bin;
