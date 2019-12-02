@@ -12,6 +12,6 @@ public class BinaryString {
             binary.append(value % 2);
             value /= 2;
         } while (value >= 1);
-        return binary.reverse().toString();;
+        return binary.reverse().toString();
     }
 }
