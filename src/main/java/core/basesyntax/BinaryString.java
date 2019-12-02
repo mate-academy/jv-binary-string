@@ -7,21 +7,19 @@ public class BinaryString {
      * а возвращает String с представлением этого числа в двоичном виде.
      */
     public String toBinaryString(int value) {
-        StringBuilder buff = new StringBuilder();
+        StringBuilder binaryString = new StringBuilder();
         String result = "0";
         if (value > 0) {
             while (value != 0) {
                 if (value % 2 == 0) {
-                    buff.append(0);
+                    binaryString.append(0);
                 } else {
-                    buff.append(1);
+                    binaryString.append(1);
                 }
                 value = value / 2;
 
             }
-            buff.reverse();
-            result = buff.toString();
-            return result;
+            result = binaryString.reverse().toString();
         }
         return result;
     }
