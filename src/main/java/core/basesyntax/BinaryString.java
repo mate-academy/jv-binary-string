@@ -16,7 +16,6 @@ public class BinaryString {
         } else {
             result.append(0);
         }
-        result = result.reverse();
-        return result.toString();
+        return result.reverse().toString();
     }
 }
