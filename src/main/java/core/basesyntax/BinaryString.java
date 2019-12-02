@@ -9,14 +9,12 @@ public class BinaryString {
     public String toBinaryString(int value) {
         StringBuilder result = new StringBuilder();
         if (value == 0)  {
-            return String.valueOf(0);
+            return "0";
         }
         while (value > 0) {
-            int tempValue = ((value % 2) == 0) ? 0 : 1;
-            result.append(tempValue);
+            result.append(value % 2);
             value = value / 2;
         }
-        result.reverse();
-        return result.toString();
+        return result.reverse().toString();
     }
 }
