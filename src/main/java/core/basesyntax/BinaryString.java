@@ -12,13 +12,11 @@ public class BinaryString {
             return "0";
         }
 
-        String s = "";
+        StringBuilder sb = new StringBuilder();
         while (value > 0) {
-            s = value % 2 + s;
+            sb =  sb.append(value % 2);
             value /= 2;
         }
-        return s;
+        return sb.reverse().toString();
     }
 }
-
-
