@@ -15,6 +15,7 @@ public class BinaryString {
             builder.append(value & 1);
             value >>>= 1;
         }
+
         return builder.reverse().toString();
     }
 }
