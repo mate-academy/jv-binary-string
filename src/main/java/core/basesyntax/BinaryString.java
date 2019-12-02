@@ -10,10 +10,8 @@ public class BinaryString {
         StringBuilder value2 = new StringBuilder();
         if (value == 0) {
             value2.append(0);
-        } else if (value == 1) {
-            value2.append(1);
         } else {
-            while (value != 0) {
+            while (value >= 1) {
                 if (value % 2 > 0) {
                     value2.append(1);
                 } else {
