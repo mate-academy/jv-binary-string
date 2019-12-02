@@ -20,3 +20,4 @@ public class BinaryString {
         return sb.reverse().toString();
     }
 }
+
