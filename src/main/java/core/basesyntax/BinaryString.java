@@ -8,14 +8,13 @@ public class BinaryString {
      */
     public String toBinaryString(int value) {
         if (value == 0) {
-            return String.valueOf(0);
+            return "0";
         }
         StringBuilder builder = new StringBuilder(32);
         while (value != 0) {
             builder.append(value & 1);
-            value >>>= 1;
+            value >>= 1;
         }
-
         return builder.reverse().toString();
     }
 }
