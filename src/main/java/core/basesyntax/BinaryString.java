@@ -13,9 +13,9 @@ public class BinaryString {
             while (value != 0) {
                 String appendToBinaryString = String.valueOf(value % 2);
                 sb.append(appendToBinaryString);
-                value  /= 2;
+                value /= 2;
             }
-        }else {
+        } else {
             sb.append(0);
         }
         return sb.reverse().toString();
