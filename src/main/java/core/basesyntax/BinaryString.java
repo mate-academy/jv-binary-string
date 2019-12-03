@@ -7,7 +7,7 @@ public class BinaryString {
      * а возвращает String с представлением этого числа в двоичном виде.
      */
     public String toBinaryString(int value) {
-        StringBuffer binaryValue = new StringBuffer();
+        StringBuilder binaryValue = new StringBuilder();
         if (value == 0) {
             return "0";
         }
@@ -15,6 +15,7 @@ public class BinaryString {
             binaryValue.append(value % 2);
             value /= 2;
         }
-        return String.valueOf(binaryValue.reverse());
+        return binaryValue.reverse().toString();
     }
+
 }
