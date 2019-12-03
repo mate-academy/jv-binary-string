@@ -8,17 +8,17 @@ public class BinaryString {
      */
     public String toBinaryString(int value) {
         int temp;
-        String res = "";
+        StringBuilder res = new StringBuilder();
         if (value == 0) {
-            res = "0";
+            return "0";
         } else {
             while (value != 0) {
                 temp = value % 2;
-                res = temp + res;
+                res.append(temp);
                 value = value / 2;
             }
         }
-        return res;
+        return res.reverse().toString();
     }
 }
 
