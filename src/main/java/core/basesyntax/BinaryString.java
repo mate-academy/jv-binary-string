@@ -1,7 +1,5 @@
 package core.basesyntax;
 
-//import  java.lang.String;
-
 public class BinaryString {
     /**
      * Напишите метод toBinaryString(), который принимает на вход целое число value,
