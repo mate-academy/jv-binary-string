@@ -14,6 +14,7 @@ public class BinaryString {
                 b = value % 2;
                 num = b + num;
                 value /= 2;
+
             }
         }
         else {
