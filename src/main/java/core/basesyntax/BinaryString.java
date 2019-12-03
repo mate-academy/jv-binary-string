@@ -14,10 +14,8 @@ public class BinaryString {
                 b = value % 2;
                 num = b + num;
                 value /= 2;
-
             }
-        }
-        else {
+        } else {
             num = "0";
         }
         return num;
