@@ -13,8 +13,7 @@ public class BinaryString {
             stringBuilder.append(0);
         } else {
             while (value > 0) {
-                stringBuilder = (value % 2 == 0) ? stringBuilder.append(value % 2)
-                        : stringBuilder.append(1);
+                stringBuilder.append(value % 2);
                 value = value / 2;
             }
         }
