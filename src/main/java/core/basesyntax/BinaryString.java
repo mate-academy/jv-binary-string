@@ -7,16 +7,15 @@ public class BinaryString {
      * а возвращает String с представлением этого числа в двоичном виде.
      */
     public String toBinaryString(int value) {
-        String answer = "";
-        int mult = 1;
-        int num = 0;
-        do {
-            num += (value%2)*mult;
-            value/=2;
-            mult*=10;
-        }while (value>0);
-
-        answer = ""+ num;
-        return answer;
+        String binaryString = "";
+        int multiply = 1;
+        int number = 0;
+        while (value > 0) {
+            number += (value % 2) * multiply;
+            value /= 2;
+            multiply *= 10;
+        }
+        binaryString = "" + number;
+        return binaryString;
     }
 }
