@@ -10,18 +10,16 @@ public class BinaryString {
     public String toBinaryString(int value) {
         StringBuilder stringBuilder = new StringBuilder();
         if (value == 0) {
-            return String.valueOf(0);
+            stringBuilder.append(0);
         } else {
             while (value > 0) {
-                if (value % 2 == 0) {
-                    stringBuilder.append(value % 2);
-                } else {
-                    stringBuilder.append(1);
-                }
+                stringBuilder = (value % 2 == 0) ? stringBuilder.append(value % 2)
+                        : stringBuilder.append(1);
                 value = value / 2;
             }
         }
         return stringBuilder.reverse().toString();
     }
 }
+
 
