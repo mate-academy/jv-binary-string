@@ -9,13 +9,13 @@ public class BinaryString {
     public String toBinaryString(int value) {
         String binaryString = "";
         int multiply = 1;
-        int number = 0;
+        int binaryNumber = 0;
         while (value > 0) {
-            number += (value % 2) * multiply;
+            binaryNumber += (value % 2) * multiply;
             value /= 2;
             multiply *= 10;
         }
-        binaryString = "" + number;
+        binaryString = "" + binaryNumber;
         return binaryString;
     }
 }
