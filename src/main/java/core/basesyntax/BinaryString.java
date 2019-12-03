@@ -6,7 +6,7 @@ public class BinaryString {
      * а возврщает String с представлением этого числа в двоичном виде.
      */
     public String toBinaryString(int value) {
-        StringBuffer sb = new StringBuffer("");
+        StringBuilder sb = new  StringBuilder("");
         if (value == 0) {
             return "0";
         }
