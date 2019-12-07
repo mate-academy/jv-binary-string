@@ -10,13 +10,13 @@ public class BinaryString {
         if (value == 0) {
             return "0";
         }
-        String result = "";
+        StringBuilder result = new StringBuilder();
         int k = 0;
         while (value != 0) {
             k = value % 2;
             value /= 2;
-            result = k + result;
+            result.append(k);
         }
-        return result;
+        return result.reverse().toString();
     }
 }
