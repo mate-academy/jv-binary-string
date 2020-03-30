@@ -6,15 +6,12 @@ public class BinaryString {
         if (value == 0) {
             return "0";
         }
-        String result = "";
+        StringBuilder itog = new StringBuilder();
         while (value > 0) {
-            result = result + value % 2;
+            itog = itog.append(value % 2);
             value = (value / 2);
         }
-        StringBuilder itog = new StringBuilder(result);
-        itog = itog.reverse();
-        result = "" + itog;
-        return result;
+        return itog.reverse().toString();
 
     }
 }
