@@ -11,10 +11,10 @@ public class BinaryString {
             return "0";
         }
 
-        StringBuilder sb = new StringBuilder();
+        StringBuilder builder = new StringBuilder();
         for (int number = value; number > 0; number /= 2) {
-            sb.append(number % 2);
+            builder.append(number % 2);
         }
-        return sb.reverse().toString();
+        return builder.reverse().toString();
     }
 }
