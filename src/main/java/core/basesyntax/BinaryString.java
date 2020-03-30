@@ -12,13 +12,8 @@ public class BinaryString {
             return "0";
         }
         while (value > 0) {
-            if (value % 2 == 0) {
-                result = result + 0;
-                value = value / 2;
-            } else {
-                result = result + 1;
-                value = value / 2;
-            }
+            result = result + value % 2;
+            value = value / 2;
         }
         String[] sum = result.split("");
         String fine = "";
