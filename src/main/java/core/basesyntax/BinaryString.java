@@ -14,9 +14,9 @@ public class BinaryString {
         StringBuilder builder = new StringBuilder();
 
         while (value >= 1) {
-            builder.insert(0, value % 2);
+            builder.append( value % 2);
             value /= 2;
         }
-        return builder.toString();
+        return builder.reverse().toString();
     }
 }
