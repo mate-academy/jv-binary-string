@@ -4,9 +4,8 @@ public class BinaryString {
     public String toBinaryString(int value) {
         StringBuilder result = new StringBuilder();
         result.append(value == 0 ? "0" : "");
-        for (; value > 0; ) {
-            result.append(value % 2 != 0 ? "1" : "0");
-            value /= 2;
+        for (int i = value; i > 0; i /= 2) {
+            result.append(i % 2 != 0 ? "1" : "0");
         }
         return result.reverse().toString();
     }
