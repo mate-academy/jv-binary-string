@@ -9,9 +9,9 @@ public class BinaryString {
     public String toBinaryString(int value) {
         StringBuilder result = new StringBuilder();
         do {
-            result.insert(0, Integer.toString(value % 2));
-            value = value / 2;
+            result.append(value % 2);
+            value /= 2;
         } while (value != 0);
-        return result.toString();
+        return result.reverse().toString();
     }
 }
