@@ -9,11 +9,7 @@ public class BinaryString {
     public String toBinaryString(int value) {
         StringBuilder answer = new StringBuilder();
         do {
-            if (value % 2 == 0) {
-                answer.append('0');
-            } else {
-                answer.append('1');
-            }
+            answer.append(value % 2);
             value /= 2;
         } while (value != 0);
         return answer.reverse().toString();
