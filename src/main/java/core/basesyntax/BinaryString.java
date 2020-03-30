@@ -13,8 +13,8 @@ public class BinaryString {
 
         StringBuilder sb = new StringBuilder();
         for (int number = value; number > 0; number /= 2) {
-            sb.insert(0, number % 2);
+            sb.append(number % 2);
         }
-        return sb.toString();
+        return sb.reverse().toString();
     }
 }
