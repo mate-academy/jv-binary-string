@@ -11,11 +11,7 @@ public class BinaryString {
             StringBuilder sb = new StringBuilder();
 
             while (value > 0) {
-                if (value % 2 == 0) {
-                    sb.insert(0,"0");
-                } else {
-                    sb.insert(0,"1");
-                }
+                sb.insert(0, value % 2);
                 value = value / 2;
             }
             return sb.toString();
