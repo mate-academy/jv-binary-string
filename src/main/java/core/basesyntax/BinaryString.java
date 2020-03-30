@@ -6,10 +6,8 @@ public class BinaryString {
             return "0";
         }
         StringBuilder binaryNumber = new StringBuilder();
-        int digit;
         for (int digitalNumber = value; digitalNumber > 0; digitalNumber /= 2) {
-            digit = digitalNumber % 2;
-            binaryNumber.append(digit);
+            binaryNumber.append(digitalNumber % 2);
         }
         return binaryNumber.reverse().toString();
     }
