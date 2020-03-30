@@ -13,11 +13,7 @@ public class BinaryString {
             return "0";
         }
         for (int i = value; i >= 1; i /= 2) {
-            if (i % 2 == 0) {
-                str.append("0");
-            } else {
-                str.append("1");
-            }
+            str.append(i % 2);
         }
         return str.reverse().toString();
     }
