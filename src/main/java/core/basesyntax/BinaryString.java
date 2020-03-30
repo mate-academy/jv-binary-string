@@ -8,14 +8,10 @@ public class BinaryString {
      */
     public String toBinaryString(int value) {
         StringBuilder buffer = new StringBuilder();
-        if (value > 0) {
-            while (value != 0) {
-                buffer.append(value % 2);
-                value /= 2;
-            }
-        } else {
-            buffer.append(0);
-        }
+        do {
+            buffer.append(value % 2);
+            value /= 2;
+        } while (value != 0);
         return buffer.reverse().toString();
     }
 }
