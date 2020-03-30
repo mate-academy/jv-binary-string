@@ -7,6 +7,18 @@ public class BinaryString {
      * а возвращает String с представлением этого числа в двоичном виде.
      */
     public String toBinaryString(int value) {
-        return null;
+        if (value == 0) {
+            return "0";
+        }
+        StringBuilder binaryString = new StringBuilder("");
+        while (value > 0) {
+            if ((value % 2) == 0) {
+                binaryString.append(0);
+            } else {
+                binaryString.append(1);
+            }
+            value = value / 2;
+        }
+        return binaryString.reverse().toString();
     }
 }
