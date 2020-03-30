@@ -7,14 +7,14 @@ public class BinaryString {
      * а возвращает String с представлением этого числа в двоичном виде.
      */
     public String toBinaryString(int value) {
-        StringBuilder str = new StringBuilder();
+        StringBuilder builder = new StringBuilder();
 
         if (value == 0) {
             return "0";
         }
         for (int i = value; i >= 1; i /= 2) {
-            str.append(i % 2);
+            builder.append(i % 2);
         }
-        return str.reverse().toString();
+        return builder.reverse().toString();
     }
 }
