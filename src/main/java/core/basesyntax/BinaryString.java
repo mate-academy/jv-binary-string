@@ -10,7 +10,7 @@ public class BinaryString {
         if (value == 0) {
             return "0";
         }
-        
+
         int b;
         StringBuilder temp = new StringBuilder("");
         while (value != 0) {
