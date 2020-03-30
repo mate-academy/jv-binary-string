@@ -12,9 +12,9 @@ public class BinaryString {
         }
         StringBuilder sb = new StringBuilder();
         while (value != 0) {
-            sb.insert(0,value % 2);
+            sb.append(value % 2);
             value /= 2;
         }
-        return sb.toString();
+        return sb.reverse().toString();
     }
 }
