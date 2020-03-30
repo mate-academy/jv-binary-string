@@ -10,14 +10,11 @@ public class BinaryString {
         if (value == 0) {
             return "0";
         }
-
         StringBuilder binStr = new StringBuilder();
-
         while (value > 0) {
             binStr.append(value % 2);
             value /= 2;
         }
-
         return binStr.reverse().toString();
     }
 }
