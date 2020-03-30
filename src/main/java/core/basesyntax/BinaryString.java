@@ -12,12 +12,10 @@ public class BinaryString {
         if (value == 0) {
             return "0";
         }
-        for (;value != 0;) {
+        while (value != 0) {
             sb.append(value % 2);
             value /= 2;
         }
-
-        sb.reverse();
-        return sb.toString();
+        return sb.reverse().toString();
     }
 }
