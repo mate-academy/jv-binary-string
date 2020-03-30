@@ -8,11 +8,9 @@ public class BinaryString {
      */
     public String toBinaryString(int value) {
         StringBuilder result = new StringBuilder();
-        int temp;
         do {
-            temp = value % 2;
+            result.insert(0, Integer.toString(value % 2));
             value = value / 2;
-            result.insert(0, Integer.toString(temp));
         } while (value != 0);
         return result.toString();
     }
