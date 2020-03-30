@@ -11,12 +11,12 @@ public class BinaryString {
             return Integer.toString(value);
         }
 
-        StringBuilder sBuilder = new StringBuilder();
+        StringBuilder builder = new StringBuilder();
 
         while (value >= 1) {
-            sBuilder.insert(0, value % 2);
+            builder.insert(0, value % 2);
             value /= 2;
         }
-        return sBuilder.toString();
+        return builder.toString();
     }
 }
