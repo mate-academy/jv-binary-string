@@ -8,9 +8,6 @@ public class BinaryString {
      */
     public String toBinaryString(int value) {
         StringBuilder result = new StringBuilder();
-        if (value == 0) {
-            return "0";
-        }
         do {
             result.append(value % 2);
             value /= 2;
