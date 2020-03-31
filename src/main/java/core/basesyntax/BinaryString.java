@@ -6,8 +6,7 @@ public class BinaryString {
      * Напишите метод toBinaryString(), который принимает на вход целое число value,
      * а возвращает String с представлением этого числа в двоичном виде.
      */
-    public String toBinaryString(int value) {
-
+    public static String toBinaryString(int value) {
         StringBuilder stringBuilder = new StringBuilder();
         do {
             stringBuilder.append(value % 2);
