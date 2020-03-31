@@ -11,7 +11,6 @@ public class BinaryString {
             return "0";
         }
         StringBuilder sb = new StringBuilder();
-
         while (value > 0) {
             sb.insert(0, value % 2);
             value = value / 2;
