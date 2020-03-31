@@ -8,7 +8,7 @@ public class BinaryString {
         }
         StringBuilder result = new StringBuilder();
         while (value > 0) {
-            itog = itog.append(value % 2);
+            itog.append(value % 2);
             value = (value / 2);
         }
         return itog.reverse().toString();
