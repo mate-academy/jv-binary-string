@@ -7,7 +7,7 @@ public class BinaryString {
      * а возвращает String с представлением этого числа в двоичном виде.
      */
     public String toBinaryString(int value) {
-        if (value == 0) {
+        if (value == 0) { //https://mate-academy.github.io/style-guides/java/java.html#s4.1.1-braces-always-used
             return "0";
         } else {
             StringBuilder sb = new StringBuilder();
