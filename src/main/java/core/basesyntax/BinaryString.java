@@ -9,14 +9,10 @@ public class BinaryString {
     public String toBinaryString(int value) {
 
         StringBuilder stringBuilder = new StringBuilder();
-
         do {
-
             stringBuilder.append(value % 2);
             value = value / 2;
-
         } while (value >= 1);
-
         return stringBuilder.reverse().toString();
     }
 }
