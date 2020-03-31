@@ -14,8 +14,7 @@ public class BinaryString {
             return "1";
         }
         while (value > 1) {
-            int remainder = value % 2;
-            binaryValue.append(remainder);
+            binaryValue.append(value % 2);
             value = value / 2;
         }
         binaryValue.append("1");
