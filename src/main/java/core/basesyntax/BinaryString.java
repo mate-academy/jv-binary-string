@@ -8,10 +8,10 @@ public class BinaryString {
         }
         StringBuilder result = new StringBuilder();
         while (value > 0) {
-            itog.append(value % 2);
+            result.append(value % 2);
             value = (value / 2);
         }
-        return itog.reverse().toString();
+        return result.reverse().toString();
 
     }
 }
