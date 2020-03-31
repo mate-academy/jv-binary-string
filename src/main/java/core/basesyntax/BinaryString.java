@@ -7,15 +7,15 @@ public class BinaryString {
      * а возвращает String с представлением этого числа в двоичном виде.
      */
     public String toBinaryString(int value) {
-        StringBuilder sb = new StringBuilder();
+        StringBuilder binaryString = new StringBuilder();
         do {
             if (value % 2 > 0) {
-                sb = sb.append(1);
+                binaryString = binaryString.append(1);
             } else {
-                sb = sb.append(0);
+                binaryString = binaryString.append(0);
             }
             value /= 2;
         } while (value > 0);
-        return sb.reverse().toString();
+        return binaryString.reverse().toString();
     }
 }
