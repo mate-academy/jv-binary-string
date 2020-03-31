@@ -16,7 +16,6 @@ public class BinaryString {
             value = (value - value % 2) / 2;
         }
         binary.append(value);
-        binary.reverse();
-        return new String(binary);
+        return binary.reverse().toString();
     }
 }
