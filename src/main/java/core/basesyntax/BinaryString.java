@@ -8,7 +8,7 @@ public class BinaryString {
      */
     public String toBinaryString(int value) {
         StringBuilder binary = new StringBuilder();
-        if (value == 0 | value == 1) {
+        if (value == 0) {
             return new String(binary.append(value));
         }
         while (value > 1) {
