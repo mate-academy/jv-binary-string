@@ -12,7 +12,7 @@ public class BinaryString {
         }
         StringBuilder result = new StringBuilder();
         while (value > 1) {
-            result.append(String.valueOf(value % 2));
+            result.append(value % 2);
             value /= 2;
             if (value == 1) {
                 result.append("1");
