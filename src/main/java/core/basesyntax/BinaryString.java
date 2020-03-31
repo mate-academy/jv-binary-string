@@ -6,7 +6,7 @@ public class BinaryString {
         if (value == 0) {
             return "0";
         }
-        StringBuilder itog = new StringBuilder();
+        StringBuilder result = new StringBuilder();
         while (value > 0) {
             itog = itog.append(value % 2);
             value = (value / 2);
