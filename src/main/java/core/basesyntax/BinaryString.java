@@ -14,11 +14,7 @@ public class BinaryString {
         while (value > 1) {
             result.append(value % 2);
             value /= 2;
-            if (value == 1) {
-                result.append("1");
-                break;
-            }
         }
-        return result.reverse().toString();
+        return result.append(1).reverse().toString();
     }
 }
