@@ -11,7 +11,7 @@ public class BinaryString {
         if (value == 0) {
             return "0";
         }
-        while (value >= 1) {
+        while (value > 0) {
             binary.append(value % 2);
             value /= 2;
         }
