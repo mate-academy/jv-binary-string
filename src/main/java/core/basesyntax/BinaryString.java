@@ -8,19 +8,16 @@ public class BinaryString {
      */
     public String toBinaryString(int value) {
         int residue;
-        String result = "";
-        StringBuffer container = new StringBuffer();
+        StringBuilder container = new StringBuilder();
         if (value == 0) {
             return "0";
-        } else {
-            while (value != 0) {
-                residue = value % 2;
-                container.append(residue);
-                value = value / 2;
-            }
+        }
+        while (value != 0) {
+            residue = value % 2;
+            container.append(residue);
+            value = value / 2;
         }
         container.reverse();
-        result = container.toString();
-        return result;
+        return container.toString();
     }
 }
