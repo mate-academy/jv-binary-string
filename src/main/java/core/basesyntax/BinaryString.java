@@ -12,11 +12,10 @@ public class BinaryString {
             return "0";
         }
         while (value != 0) {
-            binaryString.insert(0, Integer.toString(value % 2));
+            binaryString.append(Integer.toString(value % 2));
             value /= 2;
         }
-
-        return binaryString.toString();
+        return binaryString.reverse().toString();
     }
 }
 
