@@ -2,11 +2,23 @@ package core.basesyntax;
 
 public class BinaryString {
 
-    /**
-     * Напишите метод toBinaryString(), который принимает на вход целое число value,
-     * а возвращает String с представлением этого числа в двоичном виде.
-     */
     public String toBinaryString(int value) {
-        return null;
+
+        StringBuilder binaryStr = new StringBuilder();
+        int res = 0;
+
+        if (value == 0) {
+            return "0";
+        }
+
+        while (value != 0) {
+            res = value % 2;
+            binaryStr.append(res);
+            value = value / 2;
+        }
+
+        String binary = binaryStr.reverse().toString();
+
+        return binary;
     }
 }
