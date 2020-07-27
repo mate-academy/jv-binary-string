@@ -11,11 +11,11 @@ public class BinaryString {
             return "0";
         }
 
-        StringBuilder str = new StringBuilder();
+        StringBuilder binaryString = new StringBuilder();
         while (value > 0) {
-            str.insert(0, ((value % 2) == 0 ? "0" : "1"));
+            binaryString.insert(0, ((value % 2) == 0 ? "0" : "1"));
             value = value / 2;
         }
-        return str.toString();
+        return binaryString.toString();
     }
 }
