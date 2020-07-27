@@ -6,7 +6,7 @@ public class BinaryString {
             return "0";
         }
 
-        StringBuffer result = new StringBuffer();
+        StringBuilder result = new StringBuilder();
         while (value > 0) {
             result.insert(0, value % 2);
             value /= 2;
