@@ -10,12 +10,11 @@ public class BinaryString {
         if (value == 0) {
             return "0";
         }
-        StringBuilder sb = new StringBuilder();
+        StringBuilder isBinary = new StringBuilder();
         while (value > 0) {
-            int isBinary = value % 2;
-            sb.append(isBinary);
+            isBinary.append(value % 2);
             value /= 2;
         }
-        return sb.reverse().toString();
+        return isBinary.reverse().toString();
     }
 }
