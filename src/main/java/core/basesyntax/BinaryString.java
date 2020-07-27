@@ -18,6 +18,6 @@ public class BinaryString {
             value /= 2;
         }
 
-        return String.valueOf(valueInBinary.reverse());
+        return valueInBinary.reverse().toString();
     }
 }
