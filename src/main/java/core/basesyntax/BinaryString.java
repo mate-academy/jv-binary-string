@@ -18,4 +18,3 @@ public class BinaryString {
         return binaryString.reverse().toString();
     }
 }
-
