@@ -12,11 +12,7 @@ public class BinaryString {
         }
         StringBuilder myStringBuilder = new StringBuilder();
         while (value != 0) {
-            if ((value & 1) == 1) {
-                myStringBuilder.append(1);
-            } else {
-                myStringBuilder.append(0);
-            }
+            myStringBuilder.append(value & 1);
             value /= 2;
         }
         return myStringBuilder.reverse().toString();
