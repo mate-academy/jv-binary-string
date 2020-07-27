@@ -11,9 +11,9 @@ public class BinaryString {
             return "0";
         }
         StringBuilder binaryValueOfNumber = new StringBuilder();
-        while (value > 0){
-            binaryValueOfNumber.append(value%2);
-            value = value/2;
+        while (value > 0) {
+            binaryValueOfNumber.append(value % 2);
+            value = value / 2;
         }
         binaryValueOfNumber.reverse();
         return binaryValueOfNumber.toString();
