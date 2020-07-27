@@ -11,21 +11,10 @@ public class BinaryString {
             return "0";
         }
         StringBuilder result = new StringBuilder();
-        int power = 0;
-        while (Math.pow(2, power) <= value) {
-            power++;
+        while (value != 0) {
+            result.append(value % 2);
+            value /= 2;
         }
-        power--;
-        while (power >= 0) {
-            if (Math.pow(2, power) > value) {
-                result.append("0");
-                power--;
-            } else {
-                value -= Math.pow(2, power);
-                power--;
-                result.append("1");
-            }
-        }
-        return result.toString();
+        return result.reverse().toString();
     }
 }
