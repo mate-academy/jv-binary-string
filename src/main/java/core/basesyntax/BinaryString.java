@@ -10,15 +10,15 @@ public class BinaryString {
         if (value == 0) {
             return "0";
         }
-        StringBuilder sb = new StringBuilder();
+        StringBuilder myStringBuilder = new StringBuilder();
         while (value != 0) {
             if ((value & 1) == 1) {
-                sb.append(1);
+                myStringBuilder.append(1);
             } else {
-                sb.append(0);
+                myStringBuilder.append(0);
             }
             value /= 2;
         }
-        return sb.reverse().toString();
+        return myStringBuilder.reverse().toString();
     }
 }
