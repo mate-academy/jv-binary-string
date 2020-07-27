@@ -9,11 +9,10 @@ public class BinaryString {
     public String toBinaryString(int value) {
         StringBuilder binaryString = new StringBuilder();
         if (value == 0) {
-            binaryString.insert(0, Integer.toString(0));
+            return "0";
         }
         while (value != 0) {
-            int i = value % 2;
-            binaryString.insert(0, Integer.toString(i));
+            binaryString.insert(0, Integer.toString(value % 2));
             value /= 2;
         }
 
