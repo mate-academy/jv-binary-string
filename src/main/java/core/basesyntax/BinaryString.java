@@ -14,7 +14,7 @@ public class BinaryString {
         StringBuilder binaryString = new StringBuilder();
         while (value > 0) {
             binaryString.insert(0, ((value % 2) == 0 ? "0" : "1"));
-            value = value / 2;
+            value /= 2;
         }
         return binaryString.toString();
     }
