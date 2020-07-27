@@ -12,8 +12,7 @@ public class BinaryString {
         }
         StringBuilder builder = new StringBuilder();
         while (value > 0) {
-            int remainder = value % 2;
-            builder.append(remainder);
+            builder.append(value % 2);
             value /= 2;
         }
         builder = builder.reverse();
