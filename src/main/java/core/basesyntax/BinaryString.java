@@ -7,7 +7,6 @@ public class BinaryString {
         while (value != 0)
         {
             valueSB.append((value%2));
-            System.out.print(value%2);
             value = value/2;
         }
         return valueSB.reverse().toString();
