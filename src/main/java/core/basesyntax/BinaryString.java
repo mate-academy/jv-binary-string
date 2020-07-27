@@ -10,16 +10,9 @@ public class BinaryString {
         if (value == 0) {
             return "0";
         }
-        boolean isNegative = value < 0;
-        if (isNegative) {
-            value = -value;
-        }
         StringBuilder result = new StringBuilder();
         for (int i = value; i > 0; i /= 2) {
             result.append(i % 2);
-        }
-        if (isNegative) {
-            result.append("-");
         }
         return result.reverse().toString();
     }
