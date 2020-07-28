@@ -10,9 +10,8 @@ public class BinaryString {
         StringBuilder stringBuilder = new StringBuilder();
         if (value > 1) {
             while (value > 0) {
-                int s = !(value % 2 == 0) ? 1 : 0;
+                stringBuilder.append(value % 2);
                 value /= 2;
-                stringBuilder.append(s);
             }
             return stringBuilder.reverse().toString();
         }
