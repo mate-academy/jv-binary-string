@@ -10,12 +10,12 @@ public class BinaryString {
         if (value == 0) {
             return "0";
         }
-        String result = "";
+        StringBuilder result = new StringBuilder();
         while (value > 0) {
             int a = value % 2;
-            result = a + result;
+            result.insert(0, a);
             value = value / 2;
         }
-        return result;
+        return result.toString();
     }
 }
