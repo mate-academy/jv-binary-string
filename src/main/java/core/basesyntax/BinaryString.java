@@ -11,16 +11,9 @@ public class BinaryString {
             return "0";
         }
         StringBuilder builder = new StringBuilder("");
-        int remainder = 0;
-        while (value >= 1) {
-            if (value == 1) {
-                builder.append(1);
-                break;
-            } else {
-                remainder = value % 2;
-                builder.append(remainder);
-                value = Math.round(value / 2);
-            }
+        while (value > 0.5) {
+            builder.append(value % 2);
+            value = Math.round(value / 2);
         }
         return builder.reverse().toString();
     }
