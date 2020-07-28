@@ -13,10 +13,8 @@ public class BinaryString {
     private Integer compute(int value) {
         if (value == 0) {
             return 0;
-        } else {
-            int n = value % 2;
-            return n + 10 * compute(value / 2);
         }
-
+        int n = value % 2;
+        return n + 10 * compute(value / 2);
     }
 }
