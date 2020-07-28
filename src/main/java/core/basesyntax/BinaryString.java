@@ -12,8 +12,7 @@ public class BinaryString {
         int decimal = value;
 
         while (decimal > 0) {
-            int remaining = decimal % 2;
-            valueToBinary.append(remaining);
+            valueToBinary.append(decimal % 2);
             decimal /= 2;
         }
 
